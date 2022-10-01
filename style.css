@@ -1,112 +1,143 @@
+/*===================Page===================*/
 body {
-    margin: 0;
-  
-    font-family: "Open Sans", sans-serif;
-  
-    background: linear-gradient(90deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
-  
-    min-height: 100vh;
-  }
-  
-  .page {
-    width: 600px;
-    margin: 0 auto;
-    padding-top: 65px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  
-    margin-bottom: 15px;
-  }
-  
-  ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    color: #1f1534;
-    text-decoration: none;
-  }
-  
-  ul li a {
-      opacity: 0.5;
-  }
-  
-  ul li a:hover {
-    font-weight: bold;
-    opacity: 1;
-  }
-  
-  h1,
-  ul {
-    font-family: "Mulish", sans-serif;
-  }
-  
-  h1 {
-    font-size: 49px;
-    line-height: 56px;
-    color: #1f1534;
-  
-    font-weight: normal;
-  
-    width: 490px;
-  }
-  
-  h1 span {
-    color: #89c5cc;
-    font-weight: bold;
-  }
-  
-  section p {
-    font-size: 14px;
-    line-height: 28px;
-    color: #7d7987;
-  
-    margin: 40px 0;
-  }
-  
-  button {
-    color: white;
-    font-family: "Open Sans", sans-serif;
-  
-    background: #69B99D;
-    border: 0;
-    padding: 0 50px 30px;
-  
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-  
-    border-radius: 4px;
-  
-    cursor: pointer;
-  }
-  
-  button:hover {
-      background: #4EA788;
-  }
-  
-  footer {
-    font-size: 14px;
-    line-height: 28px;
-  
-    text-align: center;
-  
-    margin-top: 80px;
-  }
-  
-  footer a {
-    font-weight: bold;
-  }
-  
-  #balls {
-      bottom: 0;
-      right: 0;
-  }
-  
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+}
+
+.page {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+/*=================Navigation================*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 1006px;
+
+  margin: 0 auto 55px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  font-size: 18px;
+  line-height: 23px;
+
+  font-family: 'Mulish', sans-serif;
+  color: #1F1534;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  opacity: 1;
+}
+
+/*===================Main====================*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: auto;
+
+  width: 1008px;
+}
+
+main section h1 {
+  font-size: 49px;
+  line-height: 56px;
+
+  font-family: 'Mulish', sans-serif;
+  font-weight: normal;
+  color: #1F1534;
+
+  width: 490px;
+}
+
+main section h1 span {
+  font-weight: bold;
+  color: #89C5CC;
+}
+
+main section p {
+  font-size: 14px;
+  line-height: 28px;
+
+  font-family: 'Open Sans', sans-serif;
+  color: #7D7987;
+
+  margin: 40px 0;
+}
+
+main section button {
+  font-size: 16px;
+  line-height: 22px;
+
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 32px 15px;
+  gap: 10px;
+  border-radius: 4px;
+  border: none;
+  background: #69B99D;
+}
+
+main section button a {
+  text-decoration: none;
+  color: #F9F9F9;
+}
+
+main section button:hover {
+  background: #4bb791;
+}
+
+/*===================Footer==================*/
+footer {
+  font-size: 14px;
+  line-height: 28px;
+
+  font-family: 'Open Sans', sans-serif;
+
+  color: #000000;
+
+  text-align: center;
+
+  margin: 80px;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+}
+
+footer a:hover {
+  color: #000000;
+  opacity: 0.5;
+}
+
+/*===================Balls===================*/
+#balls {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
